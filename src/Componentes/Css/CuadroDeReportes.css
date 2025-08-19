@@ -1,0 +1,109 @@
+/*.ContenedorDeReporte{
+  background-color:#F9FAFB;
+  color: #0C3C66;
+  border-radius: 15px;
+  height: 370px;
+  width: 360px;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 calc(33.333% - 40px); 
+  max-width: 360px; 
+}
+.ContenedorDeReporte:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.ContenedorDeReporte h2{
+  color: #6A1B9A;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.ContenedorDeReporte img {
+  height: auto;
+  width: 90%;
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 900px) {
+  .ContenedorDeReporte {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .ContenedorDeReporte img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .ContenedorDeReporte {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ContenedorDeReporte {
+    flex: 1 1 100%;
+  }
+}*/
+
+.ContenedorDeReporte {
+  background-color: #F9FAFB;
+  color: #0C3C66;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* claves para el responsive */
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: 360px;
+  min-width: 280px;
+}
+
+.ContenedorDeReporte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ContenedorDeReporte h2 {
+  color: #6A1B9A;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.ContenedorDeReporte img {
+  height: auto;
+  width: 90%;
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablets: 1 tarjeta por fila, anchita */
+@media (max-width: 900px) {
+  .ContenedorDeReporte {
+    flex: 1 1 90%;
+    max-width: 600px;
+  }
+}
+
+/* Celulares: ocupa todo el ancho */
+@media (max-width: 600px) {
+  .ContenedorDeReporte {
+    flex: 1 1 100%;
+    max-width: 95%;
+  }
+}
+
+

@@ -1,0 +1,40 @@
+.BarraDeBusqueda{
+  min-height: 6vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+}
+
+form{
+  background-color:#e6e6e6;
+  width: 90%;
+  max-width: 600px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 10px;
+}
+form input{
+  font-size: 18px;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+form button {
+  background-color: #8820a1;
+  color: #e6e6e6;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+form button:hover{
+  background-color: #bc58d4;
+}
