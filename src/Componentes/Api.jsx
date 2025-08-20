@@ -37,19 +37,19 @@ export default function Api({ icao }) {
         titulo="METAR"
         aeropuerto={aeropuerto}
         valor={metar}
-        imagen="public/img/Metar.jpg"
+        imagen="/img/metar_de_aeropuerto.jpg"
       />
       <CuadroDeReportes
         titulo="REGLA DE VUELO "
         aeropuerto={aeropuerto}
         valor={reglasDeVuelo}
-        imagen="public/img/Regla de vuelo.jpg"
+        imagen="/img/regla_de_vuelo.jpg"
       />
       <CuadroDeReportes
         titulo="TEMPERATURA"
         aeropuerto={aeropuerto}
         valor={` ${temperatura} C°`}
-        imagen="public/img/Temperatura.jpg"
+        imagen="/img/temperatura_de_aeropuerto.jpg"
       />
     </div>
   );
